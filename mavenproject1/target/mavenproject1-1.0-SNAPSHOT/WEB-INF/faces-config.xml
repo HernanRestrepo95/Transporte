@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+
+-->
+<faces-config version="2.3"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd">
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>welcome</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>conductor</managed-bean-name>
+        <managed-bean-class>com.mycompany.mavenproject1.jsf.classes.ConductorController</managed-bean-class>
+    
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>conductor_create</from-outcome>
+            <to-view-id>/JSF/conductor/New.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>conductor_list</from-outcome>
+            <to-view-id>/JSF/conductor/List.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>conductor_edit</from-outcome>
+            <to-view-id>/JSF/conductor/Edit.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>conductor_detail</from-outcome>
+            <to-view-id>/JSF/conductor/Detail.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>empresa</managed-bean-name>
+        <managed-bean-class>com.mycompany.mavenproject1.jsf.classes.EmpresaController</managed-bean-class>
+    
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>empresa_create</from-outcome>
+            <to-view-id>/JSF/empresa/New.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>empresa_list</from-outcome>
+            <to-view-id>/JSF/empresa/List.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>empresa_edit</from-outcome>
+            <to-view-id>/JSF/empresa/Edit.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>empresa_detail</from-outcome>
+            <to-view-id>/JSF/empresa/Detail.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>representanteLegal</managed-bean-name>
+        <managed-bean-class>com.mycompany.mavenproject1.jsf.classes.RepresentanteLegalController</managed-bean-class>
+    
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>representanteLegal_create</from-outcome>
+            <to-view-id>/JSF/representanteLegal/New.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>representanteLegal_list</from-outcome>
+            <to-view-id>/JSF/representanteLegal/List.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>representanteLegal_edit</from-outcome>
+            <to-view-id>/JSF/representanteLegal/Edit.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>representanteLegal_detail</from-outcome>
+            <to-view-id>/JSF/representanteLegal/Detail.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>tipoIdentificacion</managed-bean-name>
+        <managed-bean-class>com.mycompany.mavenproject1.jsf.classes.TipoIdentificacionController</managed-bean-class>
+    
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>tipoIdentificacion_create</from-outcome>
+            <to-view-id>/JSF/tipoIdentificacion/New.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>tipoIdentificacion_list</from-outcome>
+            <to-view-id>/JSF/tipoIdentificacion/List.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>tipoIdentificacion_edit</from-outcome>
+            <to-view-id>/JSF/tipoIdentificacion/Edit.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>tipoIdentificacion_detail</from-outcome>
+            <to-view-id>/JSF/tipoIdentificacion/Detail.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>vehiculo</managed-bean-name>
+        <managed-bean-class>com.mycompany.mavenproject1.jsf.classes.VehiculoController</managed-bean-class>
+    
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>vehiculo_create</from-outcome>
+            <to-view-id>/JSF/vehiculo/New.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>vehiculo_list</from-outcome>
+            <to-view-id>/JSF/vehiculo/List.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>vehiculo_edit</from-outcome>
+            <to-view-id>/JSF/vehiculo/Edit.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>vehiculo_detail</from-outcome>
+            <to-view-id>/JSF/vehiculo/Detail.jsp</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <converter>
+        <converter-for-class>com.mycompany.mavenproject1.entity.Conductor</converter-for-class>
+        <converter-class>com.mycompany.mavenproject1.jsf.classes.ConductorConverter</converter-class>
+    </converter>
+    <converter>
+        <converter-for-class>com.mycompany.mavenproject1.entity.Empresa</converter-for-class>
+        <converter-class>com.mycompany.mavenproject1.jsf.classes.EmpresaConverter</converter-class>
+    </converter>
+    <converter>
+        <converter-for-class>com.mycompany.mavenproject1.entity.RepresentanteLegal</converter-for-class>
+        <converter-class>com.mycompany.mavenproject1.jsf.classes.RepresentanteLegalConverter</converter-class>
+    </converter>
+    <converter>
+        <converter-for-class>com.mycompany.mavenproject1.entity.TipoIdentificacion</converter-for-class>
+        <converter-class>com.mycompany.mavenproject1.jsf.classes.TipoIdentificacionConverter</converter-class>
+    </converter>
+    <converter>
+        <converter-for-class>com.mycompany.mavenproject1.entity.Vehiculo</converter-for-class>
+        <converter-class>com.mycompany.mavenproject1.jsf.classes.VehiculoConverter</converter-class>
+    </converter>
+    <application>
+        <el-resolver>com.mycompany.mavenproject1.jsf.classes.util.JsfCrudELResolver</el-resolver>
+    </application>
+</faces-config>
